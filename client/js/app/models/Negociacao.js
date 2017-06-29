@@ -8,12 +8,12 @@ class Negociacao {
         Object.freeze(this);
     }
 
+    get data(){
+        return new Date(this._data.getTime());
+    }
+    
     get volume() {
         return this.quantidade * this.valor;
-    }
-
-    get data(){
-        return new Date (this._data.getTime());
     }
 
     get quantidade() {
