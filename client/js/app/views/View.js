@@ -13,4 +13,4 @@ class View {
 
         this._elemento.innerHTML = this.template(model);
     }
-}
+}   
